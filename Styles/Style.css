@@ -1056,268 +1056,6 @@
     } 
 }
 
-@media(max-width: 1024px){
-
-    .letraTitulo{
-        text-align: center;
-        padding-top: 3%;
-        color: #ffb914;
-        /* #ffb914 - #f5b494*/
-        font-weight: 800;
-        font-size: clamp(12px, 6vw, 32px);
-    }
-
-    .txtMusica, .numMusica{
-        text-align: center;
-        color: #ABDECB;
-        background-color: transparent;
-        font-weight: 200;
-        font-size: clamp(12px, 6vw, 22px);
-        padding-left: 14px;
-        padding-top: 10px;
-    }    
-    
-    .capaMusic{
-        position: absolute;
-        width: 20%;
-        top: 18%;
-        left: 40%;
-    }
-    
-    .botoesPlayer{
-        position: absolute;
-        top:  58%;
-        left: 40%;
-        width: 20%;
-        height: 7%;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 0.5fr 0.5fr 0.5fr; 
-        background-color: transparent;
-        margin-left: 1%;
-    }
-    
-    /* Botão Play*/
-    .boxPlay{
-        background-color: #30fa55;
-        color: aliceblue;
-        width: 70%;
-        height: 72%;
-        padding-bottom: 16%;
-        border-radius: 18%;
-        border: 2px solid #30fa55;
-        box-shadow: -3px 4px 0 #1b7f2e;
-        cursor: pointer;
-    }
-    
-    .play{
-        background-color: transparent;
-    }
-    
-    button.boxPlay:hover{
-        background-color: #73fa8c;
-    }
-    
-    button.boxPlay:active{
-        box-shadow: inset -4px 4px 0 #25c543;
-        font-size: 0.8rem;
-    }
-    
-    /* Botão pause*/
-    .boxPause{
-        background-color: #ffb914;
-        color: aliceblue;
-        width: 70%;
-        height: 72%;
-        padding-bottom: 16%;
-        border-radius: 18%;
-        border: 2px solid #ffb914;
-        box-shadow: -3px 4px 0 #a17309;
-        cursor: pointer;
-    }
-    
-    .pause{
-        background-color: transparent;
-    }
-    
-    button.boxPause:hover{
-        background-color: #f6c44f;
-    }
-    
-    button.boxPause:active{
-        box-shadow: inset -4px 4px 0 #d49500;
-        font-size: 0.8rem;
-    }
-    
-    /* Botão stop*/
-    .boxStop{
-        background-color: #ff2929;
-        color: aliceblue;
-        width: 70%;
-        height: 72%;
-        padding-bottom: 16%;
-        border-radius: 18%;
-        border: 2px solid #ff2929;
-        box-shadow: -3px 4px 0 #a71515;
-        cursor: pointer;
-    }
-    
-    .stop{
-        background-color: transparent;
-    }
-    
-    button.boxStop:hover{
-        background-color: #f64c4c;
-    }
-    
-    button.boxStop:active{
-        box-shadow: inset -4px 4px 0 #c81c1c;
-        font-size: 0.8rem;
-    }
-    
-    /* Input e os botões externo*/
-    .botoesExterno{
-        position: absolute;
-        background-color: transparent;
-        width: 20%;
-        height: 20%;
-        top:  68%;
-        left: 40%;
-    }
-    
-    .texto{
-        padding: 0px 10px;
-        width: 100%;
-        height: 30%;
-        background-color: aliceblue;
-        border-radius: 4px;
-        border: 2px solid #adadad;
-        box-shadow: -3px 4px 0 #ABDECB;
-        font-weight: 200;
-        font-size: clamp(12px, 6vw, 16px);
-        outline: none;
-    }
-    
-    .confirmar{
-        position: absolute;
-        width: 48%;
-        height: 30%;
-        left: -10%;
-        color: aliceblue;
-        font-weight: 200;
-        font-size: clamp(12px, 4vw, 12px);
-        border-radius: 6px;
-        border: 2px solid #25c543;
-        background-color: #25c543;
-        box-shadow: -3px 4px 0 #1b7f2e;
-        cursor: pointer;
-    }
-    
-    button.confirmar:hover{
-        background-color: #30fa55;
-    }
-    
-    button.confirmar:active{
-        box-shadow: inset -4px 4px 0 #1b7f2e;
-        font-size: 1rem;
-    }
-    
-    .pular{
-        position: absolute;
-        width: 48%;
-        height: 30%;
-        left: 60%;
-        color: aliceblue;
-        font-weight: 200;
-        font-size: clamp(12px, 4vw, 12px);
-        border-radius: 6px;
-        border: 2px solid #ff2929;
-        background-color: #ff2929;
-        box-shadow: -3px 4px 0 #a71515;
-        cursor: pointer;
-    }
-    
-    button.pular:hover{
-        background-color: #f64c4c;
-    }
-    
-    button.pular:active{
-        box-shadow: inset -4px 4px 0 #a71515;
-        font-size: 1rem;
-    }
-
-    /* Barra do tempo de musica */
-    .tempo{
-        color: aliceblue;
-        font-weight: 200;
-        font-size: clamp(16px, 6vw, 16px);
-    }
-
-    .duracao{
-        position: absolute;
-        width: 22.3%;
-        top: 48%;
-        left: 40%;
-        background-color: transparent;
-
-    }
-
-    .barra{
-        width: 90%;
-        height: 12px;
-        border: 2px solid #ffffff;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    progress {
-        height: 9px;
-        width: 0;
-    }
-
-    .ponto{
-        width: 20px;
-        height: 20px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        margin-left: -10px;
-        cursor: pointer;
-    }
-
-    .tempo{
-        display: flex;
-        width: 90%;
-        justify-content: space-between; /* Distancia os objetos */
-    }
-   
-    .result{
-        text-align: center;
-        padding-top: 3%;
-        color: #ffb914;
-        /* #ffb914 - #f5b494*/
-        font-weight: 600;
-        font-size: clamp(16px, 6vw, 36px);
-    }
-
-    .txtAcerto, .textResult, .txtFinal{
-        text-align: center;
-        padding-top: 3%;
-        color: #ffffff;
-        /* #ffb914 - #f5b494*/
-        font-weight: 500;
-        font-size: clamp(16px, 6vw, 28px);
-    }
-    
-    .imagemFim{
-        position: absolute;
-        width: 20%;
-        top: 45%;
-        left: 40%;
-    } 
-}
-
 @media(max-width: 767px){
 
     .letraTitulo{
@@ -1542,6 +1280,268 @@
     .ponto{
         width: 20px;
         height: 20px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+
+    .tempo{
+        display: flex;
+        width: 90%;
+        justify-content: space-between; /* Distancia os objetos */
+    }
+   
+    .result{
+        text-align: center;
+        padding-top: 3%;
+        color: #ffb914;
+        /* #ffb914 - #f5b494*/
+        font-weight: 600;
+        font-size: clamp(16px, 6vw, 36px);
+    }
+
+    .txtAcerto, .textResult, .txtFinal{
+        text-align: center;
+        padding-top: 3%;
+        color: #ffffff;
+        /* #ffb914 - #f5b494*/
+        font-weight: 500;
+        font-size: clamp(16px, 6vw, 28px);
+    }
+    
+    .imagemFim{
+        position: absolute;
+        width: 20%;
+        top: 45%;
+        left: 40%;
+    } 
+}
+
+@media(max-width: 380px){
+
+    .letraTitulo{
+        text-align: center;
+        padding-top: 3%;
+        color: #ffb914;
+        /* #ffb914 - #f5b494*/
+        font-weight: 800;
+        font-size: clamp(12px, 6vw, 28px);
+    }
+
+    .txtMusica, .numMusica{
+        text-align: center;
+        color: #ABDECB;
+        background-color: transparent;
+        font-weight: 200;
+        font-size: clamp(12px, 6vw, 20px);
+        padding-left: 14px;
+        padding-top: 10px;
+    }    
+    
+    .capaMusic{
+        position: absolute;
+        width: 30%;
+        top: 18%;
+        left: 35%;
+    }
+    
+    .botoesPlayer{
+        position: absolute;
+        top:  44%;
+        left: 31%;
+        width: 40%;
+        height: 6%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr; 
+        background-color: transparent;
+        margin-left: 1%;
+    }
+    
+    /* Botão Play*/
+    .boxPlay{
+        background-color: #30fa55;
+        color: aliceblue;
+        width: 70%;
+        height: 72%;
+        padding-bottom: 16%;
+        border-radius: 18%;
+        border: 2px solid #30fa55;
+        box-shadow: -3px 4px 0 #1b7f2e;
+        cursor: pointer;
+    }
+    
+    .play{
+        background-color: transparent;
+    }
+    
+    button.boxPlay:hover{
+        background-color: #73fa8c;
+    }
+    
+    button.boxPlay:active{
+        box-shadow: inset -4px 4px 0 #25c543;
+        font-size: 0.8rem;
+    }
+    
+    /* Botão pause*/
+    .boxPause{
+        background-color: #ffb914;
+        color: aliceblue;
+        width: 70%;
+        height: 72%;
+        padding-bottom: 16%;
+        border-radius: 18%;
+        border: 2px solid #ffb914;
+        box-shadow: -3px 4px 0 #a17309;
+        cursor: pointer;
+    }
+    
+    .pause{
+        background-color: transparent;
+    }
+    
+    button.boxPause:hover{
+        background-color: #f6c44f;
+    }
+    
+    button.boxPause:active{
+        box-shadow: inset -4px 4px 0 #d49500;
+        font-size: 0.8rem;
+    }
+    
+    /* Botão stop*/
+    .boxStop{
+        background-color: #ff2929;
+        color: aliceblue;
+        width: 70%;
+        height: 72%;
+        padding-bottom: 16%;
+        border-radius: 18%;
+        border: 2px solid #ff2929;
+        box-shadow: -3px 4px 0 #a71515;
+        cursor: pointer;
+    }
+    
+    .stop{
+        background-color: transparent;
+    }
+    
+    button.boxStop:hover{
+        background-color: #f64c4c;
+    }
+    
+    button.boxStop:active{
+        box-shadow: inset -4px 4px 0 #c81c1c;
+        font-size: 0.8rem;
+    }
+    
+    /* Input e os botões externo*/
+    .botoesExterno{
+        position: absolute;
+        background-color: transparent;
+        width: 40%;
+        height: 20%;
+        top:  55%;
+        left: 30%;
+    }
+    
+    .texto{
+        padding: 0px 10px;
+        width: 100%;
+        height: 30%;
+        background-color: aliceblue;
+        border-radius: 4px;
+        border: 2px solid #adadad;
+        box-shadow: -3px 4px 0 #ABDECB;
+        font-weight: 200;
+        font-size: clamp(12px, 6vw, 16px);
+        outline: none;
+    }
+    
+    .confirmar{
+        position: absolute;
+        width: 48%;
+        height: 30%;
+        left: -10%;
+        color: aliceblue;
+        font-weight: 200;
+        font-size: clamp(12px, 4vw, 12px);
+        border-radius: 6px;
+        border: 2px solid #25c543;
+        background-color: #25c543;
+        box-shadow: -3px 4px 0 #1b7f2e;
+        cursor: pointer;
+    }
+    
+    button.confirmar:hover{
+        background-color: #30fa55;
+    }
+    
+    button.confirmar:active{
+        box-shadow: inset -4px 4px 0 #1b7f2e;
+        font-size: 1rem;
+    }
+    
+    .pular{
+        position: absolute;
+        width: 48%;
+        height: 30%;
+        left: 60%;
+        color: aliceblue;
+        font-weight: 200;
+        font-size: clamp(12px, 4vw, 12px);
+        border-radius: 6px;
+        border: 2px solid #ff2929;
+        background-color: #ff2929;
+        box-shadow: -3px 4px 0 #a71515;
+        cursor: pointer;
+    }
+    
+    button.pular:hover{
+        background-color: #f64c4c;
+    }
+    
+    button.pular:active{
+        box-shadow: inset -4px 4px 0 #a71515;
+        font-size: 1rem;
+    }
+
+    /* Barra do tempo de musica */
+    .tempo{
+        color: aliceblue;
+        font-weight: 200;
+        font-size: clamp(8px, 6vw, 12px);
+    }
+
+    .duracao{
+        position: absolute;
+        width: 34%;
+        top: 35%;
+        left: 35%;
+        background-color: transparent;
+
+    }
+
+    .barra{
+        width: 90%;
+        height: 12px;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    progress {
+        height: 9px;
+        width: 0;
+    }
+
+    .ponto{
+        width: 16px;
+        height: 16px;
         background-color: #ffffff;
         border-radius: 50%;
         margin-left: -10px;
