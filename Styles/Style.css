@@ -1318,7 +1318,7 @@
     } 
 }
 
-@media(max-width: 400px){
+@media(max-width: 440px){
 
     .letraTitulo{
         text-align: center;
@@ -1518,7 +1518,7 @@
     .duracao{
         position: absolute;
         width: 34%;
-        top: 35%;
+        top: 38%;
         left: 35%;
         background-color: transparent;
 
