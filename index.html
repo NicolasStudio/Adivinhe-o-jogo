@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="Image/iconMusic.png">
+
+
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script defer src="Js/Script.js" defer></script>
+
+    <title>Adivinhe a música</title>
+</head>
+<body>
+
+    <div class="titleGame">
+        <p class="letraTitulo"> De qual jogo essa música pertence? </p>
+    </div>
+
+    <div class="boxMusica">
+       <p class="txtMusica"> Musica nº:  <a class="numMusica" id="numMusica"> </a></p>
+
+        <img class="capaMusic" src="Image/capaMusic.png" >
+
+            <div class="duracao">
+                <div class="barra"> 
+                    <progress value="0" max="1"> </progress>
+                    <div class="ponto"></div>
+
+                </div>
+
+                <div class="tempo">
+                    <p class="inicio" >0:00</p>
+                    <p class="fim" >3:40</p>
+                </div>
+            </div>
+
+            <div class="nomeMusica">
+                <audio class="audio" src="Music/Sonic The Hedgehog - Green Hill Zone.mp3" > </audio>
+            </div>
+
+            <div class="botoesPlayer">
+                <button class="boxPlay">    
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="play" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </button> 
+
+                <button class="boxPause">    
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="pause" viewBox="0 0 16 16">
+                    <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                    </svg>
+                </button> 
+
+                <button class="boxStop">    
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="stop" viewBox="0 0 16 16">
+                        <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                    </svg>
+                </button> 
+            </div>
+            
+
+            <div class="botoesExterno">
+                
+                    <input type="text" id="texto" class="texto"><br><br>
+                    <button  class="confirmar"> Confirmar </button>
+                    <button  class="pular"> Pular </button>
+                
+            </div>
+
+        </div>
+
+</body>
+</html>

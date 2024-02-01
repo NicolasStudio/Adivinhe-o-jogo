@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="Image/iconMusic.png">
+
+
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script defer src="Js/Script.js" defer></script>
+
+    <title>Adivinhe a música</title>
+</head>
+<body>
+
+    <div class="titleGame">
+        <p class="result"> Resultado </p>
+
+        <p class="txtAcerto"> Você acertou: <a class="textResult" id="textResult"> ??? </a></p>
+
+        <p class="txtFinal" id="txtFinal"> Blá blá</p>
+
+        <img class="imagemFim" id="imagemFim" src=>
+
+
+        <script>
+
+            var retorno = window.localStorage.getItem('acertos');
+            document.getElementById("textResult").innerHTML =  retorno + '/100';
+
+            var texto1 = window.localStorage.getItem('mensagem');
+            document.getElementById("txtFinal").innerHTML = texto1 ;
+
+            var num = window.localStorage.getItem('num');
+            document.getElementById("imagemFim").src = `Image/${num}.gif`;
+
+        </script>
+
+    </div>
+
+</body>
+</html>
